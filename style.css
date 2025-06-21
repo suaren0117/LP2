@@ -95,7 +95,7 @@ li{
   padding:10px 0;
   text-align:center;
 }
-@media screen and (max-width:600px;){
+@media screen and (max-width: 600px) {
   
   #mainvisual img{
     height:calc(100vh - 60px);
@@ -106,8 +106,12 @@ li{
   #about img{
     margin-right:0;
   }
-  #bicycle{
-    flex-direction:column;
+  
+  #bicycle {
+  display: flex; /* ← 追加が必要 */
+  flex-direction: column; /* ← これもスマホ用 */
+}
+
   }
   #bicycle li{
     width:100%;
