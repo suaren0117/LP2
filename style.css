@@ -51,6 +51,12 @@ ul, li {
   font-weight: bold;
 }
 
+.site-title img {
+  width: 120px;
+  height: auto;
+}
+
+
 #header nav ul {
   display: flex;
   gap: 20px;
@@ -136,6 +142,10 @@ ul, li {
   #header nav ul {
     flex-direction: column;
     align-items: center;
+  }
+
+    .site-title img {
+    width: 100px;
   }
 
   #mainvisual img {
