@@ -119,39 +119,62 @@ footer
    レスポンシブ対応
 ------------------------ */
 @media screen and (max-width: 768px) {
+  /* ヘッダーを縦並び・中央寄せ */
   #header {
     flex-direction: column;
-    gap: 10px;
-  }
-
-  #header nav ul {
-    flex-direction: column;
     align-items: center;
+    gap: 10px;
+    text-align: center;
   }
 
-    .site-title img {
+  /* ロゴ画像を小さく */
+  .site-title img {
     width: 100px;
   }
 
+  /* メニュー縦並び */
+  #header ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* メインビジュアル画像高さ調整 */
   #mainvisual img {
     height: 40vh;
   }
 
+  /* Aboutセクション：縦並び、中央揃え */
   #about .content {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   #about img {
-    margin-bottom: 16px;
+    margin: 0 0 16px;
   }
 
+  #about .text {
+    text-align: center;
+  }
+
+  /* Bicycleセクション：縦並び、カード中央揃え */
   #bicycle ul {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   #bicycle li {
     width: 100%;
+    max-width: 400px;
+  }
+
+  .section-title {
+    margin-bottom: 30px;
+    font-size: 1.6rem;
   }
 }
+
+
